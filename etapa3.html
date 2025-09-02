@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto - Etapa 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <img src="img/logo.png" alt="Logo Centro de Ensino" class="fixed-logo">
+  <div class="container">
+    <h2 class="mb-4 text-center">Cadastro de Produto - Etapa 3: Informações Adicionais</h2>
+    <form>
+      <div class="mb-3">
+        <label for="manufacturer" class="form-label">Fabricante:</label>
+        <input type="text" id="manufacturer" name="manufacturer" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="country" class="form-label">País de origem:</label>
+        <input type="text" id="country" name="country" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="remarks" class="form-label">Observações:</label>
+        <textarea id="remarks" name="remarks" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="barcode" class="form-label">Código de barras:</label>
+        <input type="text" id="barcode" name="barcode" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="warehouse_location" class="form-label">Localização no armazém:</label>
+        <input type="text" id="warehouse_location" name="warehouse_location" class="form-control">
+      </div>
+      <div class="mt-4 text-center">
+        <button type="button" onclick="salvarProduto()" class="btn btn-primary me-2">Concluir</button>
+        <button type="button" onclick="window.location.href='etapa2.html'" class="btn btn-secondary me-2">Voltar</button>
+        <button type="button" onclick="window.location.href='index-2.html'" class="btn btn-danger">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    function salvarProduto() {
+      alert("Produto salvo no banco de dados!");
+      window.location.href = 'conclusao.html';
+    }
+  </script>
+</body>
+</html>
